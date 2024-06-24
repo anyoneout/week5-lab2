@@ -25,6 +25,7 @@ function splitBill() {
     perPersonCost = Math.floor(totalCost / numberOfDiners);
     divPerPersonBill.style.color = "yellow";
     divPerPersonBill.innerHTML = `The cost per person is $${perPersonCost}`; 
+    document.getElementById("splitBillButton").style.display="none";
 }
 
 splitBillButton.onclick = splitBill;
